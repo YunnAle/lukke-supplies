@@ -603,9 +603,9 @@ div#loading img {
 }
 
 .site-menu-main .nav-link-item {
-  color: #213053;
+  color: #054F98;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 400;
   font-style: normal;
   letter-spacing: normal;
   position: relative;
@@ -1314,10 +1314,10 @@ li.sub-menu--item.nav-item-has-children i {
 }
 
 .l8-header-btn .btn {
-  background: #20BFA9;
+  background: #0BC244;
   min-width: 210px;
   height: 50px;
-  border-radius: 30px;
+  border-radius: 20px;
   font-weight: 600;
   font-size: 17px;
   line-height: 30px;
@@ -2014,7 +2014,7 @@ li.sub-menu--item.nav-item-has-children i {
 }
 
 .hero-area-l1 .content h2 {
-  color: #213053;
+  color: #054F98;
   font-size: 34px;
   font-weight: 600;
   font-style: normal;
@@ -2054,7 +2054,7 @@ li.sub-menu--item.nav-item-has-children i {
 .hero-area-l1 .content p {
   opacity: 0.8;
   color: #213053;
-  font-size: 17px;
+  font-size: 25px;
   font-weight: 400;
   font-style: normal;
   letter-spacing: normal;
@@ -2081,14 +2081,17 @@ li.sub-menu--item.nav-item-has-children i {
   min-width: 268px;
   height: 69px;
   border-radius: 20px;
-  background-color: #FF7139;
+  background-color: #0BC244;
   color: #fff;
   font-size: 17px;
   font-weight: 400;
   font-style: normal;
   letter-spacing: normal;
-  box-shadow: 0 26px 46px rgba(241, 139, 98, 0.5);
+  box-shadow: 0 26px 46px rgba(103, 241, 98, 0.5);
   margin-top: 22px;
+  font-size: 21px;
+  line-height: 30px;
+  color: #fff;
 }
 
 .hero-image-group-l1 {
@@ -2151,7 +2154,7 @@ li.sub-menu--item.nav-item-has-children i {
 
 @media (min-width: 1200px) {
   .feature-l1-items .content {
-    padding-right: 70px;
+    padding: 35px;
   }
 }
 
@@ -2358,6 +2361,19 @@ li.sub-menu--item.nav-item-has-children i {
   letter-spacing: normal;
   line-height: 30px;
   margin-top: 40px;
+}
+
+.l1-get-start-btn2 .btn {
+  width: 247px;
+  height: 69px;
+  border-radius: 20px;
+  background-color: #5BA946;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 30px;
 }
 
 .l1-get-start-btn i {
@@ -2763,23 +2779,10 @@ li.sub-menu--item.nav-item-has-children i {
  Footer Area-1-L1
         <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 .footer-area {
-  padding-top: 48px;
-  padding-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-@media (min-width: 768px) {
-  .footer-area {
-    padding-top: 68px;
-    padding-bottom: 50px;
-  }
-}
-
-@media (min-width: 992px) {
-  .footer-area {
-    padding-top: 105px;
-    padding-bottom: 90px;
-  }
-}
 
 .footer-l1-area-items h3 {
   font-size: 15px;
@@ -4057,7 +4060,7 @@ li.sub-menu--item.nav-item-has-children i {
 }
 
 .lets-talk-btn {
-  background: #20BFA9;
+  background: #4CB0E4;
   min-width: 180px;
   height: 60px;
   font-weight: 600;
@@ -4070,7 +4073,7 @@ li.sub-menu--item.nav-item-has-children i {
 @media (min-width: 768px) {
   .lets-talk-btn {
     min-width: 218px;
-    height: 85px;
+    height: 69px;
   }
 }
 
@@ -6043,13 +6046,13 @@ li.sub-menu--item.nav-item-has-children i {
 .content-l5-2-image .shape-1 {
   position: absolute;
   bottom: 10%;
-  left: -15%;
+  left: 80%;
 }
 
 @media (min-width: 992px) {
   .content-l5-2-image .shape-1 {
-    bottom: -15%;
-    right: 22%;
+    bottom: 10%;
+    right: 80%;
   }
 }
 
@@ -25656,7 +25659,7 @@ a {
   position: absolute;
   top: 0%;
   left: 0%;
-  border-radius: 0px;
+  border-radius: 20px;
   background: #213053;
   transition: all .5s;
   z-index: -1;

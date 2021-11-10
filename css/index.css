@@ -1,0 +1,79 @@
+.btn-2 {
+    padding: 1.2rem!important;
+    min-width: 150px!important;
+}
+
+
+.bg-header {
+    background-color: white!important;
+}
+
+.bg-testimonials {
+    background-color: #EBF5FF!important;
+}
+
+.color-blue {
+    color: #054F98!important;;
+}
+
+.contact-form {
+    padding: 3rem 4rem;
+}
+
+.contact-form input, textarea{
+    height:50px;
+    margin-top:.5rem;
+    padding: 1rem 2rem;
+    color:#054F98;
+    border: none;
+    outline:none;
+    border-radius: 5px;
+    resize: none;
+}
+
+.checkbox {
+    margin-right: 1rem!important;
+}
+
+::placeholder {
+    color:#054F98;
+    opacity: 1; /* Firefox */
+  }
+
+  .terms {
+      font-size: 15px;
+  }
+
+  .bold {
+      font-weight: bold;
+  }
+
+  .socialmedia-icons {
+      margin: 0 .8rem;
+  }
+
+  .whatsapp { /* Safari */
+    position: fixed;
+    bottom: 0;
+    right:0;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    width:5rem;
+  }
+  
+  @media (max-width: 992px) {
+    .whatsapp { /* Safari */
+        position: fixed;
+        bottom: 0;
+        right:0;
+        margin-right: .5rem;
+        margin-bottom: .5rem;
+        width:3rem;
+      }
+
+  }
+  @media (max-width: 600px) {
+    .checkbox {
+        margin-right: 1rem!important;
+    }
+  }
