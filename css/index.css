@@ -7,6 +7,12 @@
 .bg-header {
     background-color: white!important;
 }
+.bg-verde {
+    background-color:#dff0e7!important;
+}
+.bg-dark-blue {
+    background-color:#132C55!important;
+}
 
 .bg-testimonials {
     background-color: #EBF5FF!important;
@@ -21,6 +27,7 @@
 }
 
 .contact-form input, textarea{
+
     height:50px;
     margin-top:.5rem;
     padding: 1rem 2rem;
@@ -37,7 +44,7 @@
 
 ::placeholder {
     color:#054F98;
-    opacity: 1; /* Firefox */
+    opacity: 0.8; /* Firefox */
   }
 
   .terms {
@@ -45,7 +52,7 @@
   }
 
   .bold {
-      font-weight: bold;
+      font-weight: bold!important;
   }
 
   .socialmedia-icons {
@@ -60,7 +67,46 @@
     margin-bottom: 2rem;
     width:5rem;
   }
-  
+
+  .border-blue {
+    border: 0.2rem solid #EBF5FF;
+  }
+
+  .text-dark {
+    color: black !important;
+  }
+
+  .text-blue {
+    color: #12448E !important;
+  }
+
+  .popup-content
+  {
+      border-radius: 4px;
+      padding: 4rem 4rem;
+      width:80%;
+      background-color: #EEF7FC;
+  }
+  .font-150 {
+    font-size: 130%!important;
+  }
+  .font-270 {
+    font-size: 270%!important;
+  }
+  .modal-contact {
+      padding: 1.9rem 2.6rem;
+      border-radius: 10px;
+  }
+  .modal-contact input{
+      font-size: 15px;
+      margin: 0.1rem 0;
+      padding: 0 1rem;
+      height: 41px;
+      box-shadow: 0px 3px 6px #00000029;
+      border-radius: 4px;
+      border: none;
+  }
+
   @media (max-width: 992px) {
     .whatsapp { /* Safari */
         position: fixed;

@@ -18,6 +18,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
   <!-- Plugin'stylesheets  -->
   <link rel="stylesheet" href="./plugins/aos/aos.min.css">
   <link rel="stylesheet" href="./plugins/fancybox/jquery.fancybox.min.css">
@@ -26,6 +27,7 @@
   <!-- Vendor stylesheets  -->
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/popup.css">
   <!-- Custom stylesheet -->
 </head>
 
@@ -38,9 +40,9 @@
           <div class="brand-logo">
             <a href="#">
               <!-- light version logo (logo must be black)-->
-              <img src="image/logo/logo-black.png" alt="" class="light-version-logo">
+              <img src="img/logo-1.png"  alt="" class="light-version-logo">
               <!-- Dark version logo (logo must be White)-->
-              <img src="image/logo/logo-white.png" alt="" class="dark-version-logo">
+              <img src="img/logo-1.png"  alt="" class="dark-version-logo">
             </a>
           </div>
           <div class="menu-block-wrapper">
@@ -85,7 +87,7 @@
         </nav>
       </div>
     </header>
-    <div class="hero-area-l1  position-relative background-property" style="background: url(./image/landing-1/hero-bg.png);">
+    <!--<div class="hero-area-l1  position-relative background-property" style="background: url(./image/landing-1/hero-bg.png);">
       <div class="container">
         <div class="row justify-content-left align-items-center">
           <div class="col-xxl-7 col-xl-8 col-lg-8 col-md-10 order-lg-1 order-1" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
@@ -93,15 +95,64 @@
               <h2>Contamos con una gran variedad de insumos para tu empresa.</h2>
               <p>Mejores productos, mejores precios....</p>
               <div class="l1-create-acc-btn">
-                <a href="#" class="btn btn-style-02">Descarga nuestro catálogos <i class="fas fa-angle-right"></i></a>
+                <a href="#" class="btn btn-style-02 btn-open-popup" onclick="popuphandler(true)">Descarga nuestro catálogos <i class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
-          
         </div>
       </div>
-    </div>
+    </div>-->
+    <div class="hero-area-l1 swiper position-relative" style="height:516px;">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <img class="w-100" src="./image/landing-1/hero-bg.png" alt="">
+          
+        </div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        ...
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
     
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
+ 
+    <!--popup bryan-->
+    <div id="popup" class="position-fixed w-100 d-flex justify-items-center d-none" style=" z-index: 50; top: 0px; right: 0px; bottom: 0px; left: 0px;">  
+        <div onclick="popuphandler(false)" class="w-100 h-100  position-absolute bg-darkblue" style="  z-index: 0; right: 0px;left: 0px;"> </div>
+        <div class="container d-flex align-items-center" id="modal">
+          <div class="popup-content mx-auto d-flex flex-column align-items-center justify-content-center">
+            <h2  class="text-center text-blue font-270">Envíanos tus datos</h2>
+            <p class="text-blue mt-4 text-center font-150">
+              Si deseas obtener el catálogo, llena el<br/> siguiente formulario. <br/> Tenemos venta a escala.
+            </p>
+            <div class="modal-contact d-flex flex-column mt-3 align-items-center justify-content-center col-11 col-lg-6 bg-verde">
+              <form action="" class="col-12">
+                <div class="col-12 d-flex flex-column">
+                  <input type="text" name="name"  placeholder="Escriba Aquí" required>
+                </div>
+                <div class="col-12 mt-3 d-flex flex-column">
+                  <input type="text" name="phone"  placeholder="Escriba Aquí">
+                </div>
+                <div class="col-12 mt-3 d-flex flex-column">
+                  <input type="email" name="email"  placeholder="Escriba Aquí" required>
+                </div>
+                <div class="col-12 d-flex flex-row l1-get-start-btn2 ">
+                  <button style="margin-top:1rem; margin-bottom: 3rem; height: 45px !important; border-radius: 4px; width: 100%; " class=" col-12 mx-auto btn ">Enviar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+    </div>
     <!-- Features Area -->
     <div class="feature-area-l1">
       <div class="container">
@@ -110,52 +161,53 @@
         </div>
         <div class="row feature-l1-items justify-content-center">
           <div class="col-lg-4 col-md-6 col-sm-11 col-xs-12" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
-            <div class="d-flex flex-column align-items-center border p-3 content h-100">
-              <img src="image/landing-1/icon-3d-target.svg" alt="image">
-              <h5 class="text-center">Visión</h5>
-              <p class="text-center">Convertirnos en el proveedor de productos consumibles primero 
+            <div class="d-flex flex-column align-items-center border-blue p-4 content h-100">
+              <img src="img/estadistica.svg" alt="image">
+              <h5 class="text-center text-dark">Visión</h5>
+              <p class="text-center text-dark">Convertirnos en el proveedor de productos consumibles primero 
                 en la Ciudad de Ensenada, que se nos reconozca y considere una empresa confiable, 
                 eficiente y con los mejores precios, no una opción si no “la opción” y después tener 
                 presencia en las demás ciudades del Estado de Baja California.</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-11 col-xs-12" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
-            <div class="d-flex flex-column align-items-center border p-3 content h-100">
-              <img src="image/landing-1/icon-3d-target.svg" alt="image">
-              <h5 class="text-center">Misión</h5>
-              <p class="text-center">Ofrecer al mejor precio productos consumibles de la mejor 
+            <div class="d-flex flex-column align-items-center border-blue p-4 content h-100">
+              <img src="img/estadistica.svg" alt="image">
+              <h5 class="text-center text-dark">Misión</h5>
+              <p class="text-center text-dark">Ofrecer al mejor precio productos consumibles de la mejor 
                 calidad en plazos de entrega razonables y con un trato personal, humano, eficiente
                 y sobre todo confiable.</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-11 col-xs-12" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
-            <div class="d-flex flex-column align-items-center border p-3 content h-100">
-              <img src="image/landing-1/icon-3d-target.svg" alt="image">
-              <h5 class="text-center">Valores</h5>
-              <p class="text-center">Nuestros valores están integrados al equipo de trabajo con el que 
+            <div class="d-flex flex-column align-items-center border-blue p-4 content h-100">
+              <img src="img/estadistica.svg" alt="image">
+              <h5 class="text-center text-dark">Valores</h5>
+              <p class="text-center text-dark">Nuestros valores están integrados al equipo de trabajo con el que 
                 contamos, personas honradas, comprometidas hacia nuestra empresa y hacia nuestros clientes,
                  decir la verdad no es opcional, y por supuesto la eficiencia. Siempre estarás en buenas manos.</p>
             </div>
           </div>
         </div>
+        
         <!--index-3-->
         <div class="feature-area-l1 row justify-content-center align-items-center">
           <div class="col-lg-5 col-md-10" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">
             <div class="content-are-l3-1-content section__heading text-center text-lg-start">
-              <h2>Quiénes somos</h2>
-              <p>Somos una empresa que nace en la ciudad de Ensenada, que al ver la complejidad al adquirir consumibles 
+              <h2 class="text-dark">Quiénes somos</h2>
+              <p class="text-dark">Somos una empresa que nace en la ciudad de Ensenada, que al ver la complejidad al adquirir consumibles 
                 a un precio justo nos sentimos comprometidos a aportar a la ciudad la creación de una empresa que permitiera
                  precisamente eso, una opción de adquirir consumibles de diversas clases a un precio justo, competitivo con el 
                  mercado nacional evitando intermediarios innecesarios que elevan los costos y complican la adquisición de los
                   productos, al mismo tiempo estamos comprometidos a ofrecer un servicio personal, confiable y de calidad.</p>
-              <a href="contacto.html" style="border-radius: 20px;"class="btn btn-style-04 focus-reset lets-talk-btn">Contáctanos</a>
+              <a href="contacto.html" class="btn btn-style-04 focus-reset lets-talk-btn">Contáctanos</a>
             </div>
           </div>
           <div class="offset-lg-2 col-lg-5 col-md-8" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
             <div class="content-l3-1-counter-area">
               <div class="content-l3-1-image ">
                 <!--bolita azul en index-5-->
-                <img class="w-100 d-none d-md-block" src="img/grupo.png" alt="img">
+                <img class="img-l3 w-100 d-none d-md-block" src="img/grupo.png" alt="img">
                 <div class="counter-box-l3 text-center text-md-start">
                   <div class="counter-items">
                     <div class="counter-content">
@@ -180,12 +232,12 @@
         <div class="row justify-content-lg-between justify-content-center align-items-center text-center text-lg-start">
           <div class="col-xl-6 col-lg-7 col-md-8">
             <div class="row section-heading-4 col-md-12">
-              <h2>Revisa nuestras <br/> Categorías de productos</h2>
+              <h2 class="text-dark">Revisa nuestras <br/> Categorías de productos</h2>
             </div>
           </div>
           <div class="col-xl-4 col-lg-6 col-md-8">
             <div class="content">
-              <p>Tenemos una amplia variedad de productos e insumos para tu empresa o negocio.</p>
+              <p class="text-dark">Tenemos una amplia variedad de productos e insumos para tu empresa o negocio.</p>
             </div>
           </div>
         </div>
@@ -289,13 +341,13 @@
           <div class="col-xl-6 col-lg-5 col-md-8">
             <div class="section__heading">
               <div class="row section-heading-4 col-md-12">
-                <h2>Nuestras Marcas</h2>
+                <h2 class="text-dark">Nuestras Marcas</h2>
               </div>
               <div class="content">
-                <p>Tenemos más de 10 marcas en nuestro catálogo.</p>
+                <p class="text-dark ">Tenemos más de 10 marcas en nuestro catálogo.</p>
               </div>
-              <div class="l1-get-start-btn">
-                <a href="#" style="width:auto;" class="btn btn-style-02">Descargar Catálogo <i class="fas fa-angle-right"></i></a>
+              <div class="l1-get-start-btn bold">
+                <a href="#" style="width:auto;" class="bold btn btn-style-02">Descargar Catálogo</a>
               </div>
             </div>
           </div>
@@ -341,8 +393,8 @@
         <div class="row justify-content-center">
           <div class="col-xxl-5 col-xl-6 col-lg-7 col-md-8" data-aos="fade-in" data-aos-delay="500" data-aos-duration="1000">
             <div class="section__heading section-heading-4 text-center">
-              <h2>Nuestros clientes</h2>
-              <p>Manejamos precios de mayoreo y la mejor calidad, aquí algunas reseñas:</p>
+              <h2 class="text-dark">Nuestros clientes</h2>
+              <p class="text-dark">Manejamos precios de mayoreo y la mejor calidad, aquí algunas reseñas:</p>
             </div>
           </div>
         </div>
@@ -350,7 +402,7 @@
           <div class="col-lg-4 col-md-6 col-sm-11 col-xs-12" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
             <div class="content h-100 text-center">
               <img src="image/landing-1/team-image.png" alt="image">
-              <p>“Recomiendo ampliamente A LukeSupplies, son excelentes proveedores.”</p>
+              <p class="text-dark">“Recomiendo ampliamente A LukeSupplies, son excelentes proveedores.”</p>
               <h5>Alan Farias</h5>
               <small>Ingeniero Civil</small>
             </div>
@@ -358,7 +410,7 @@
           <div class="col-lg-4 col-md-6 col-sm-11 col-xs-12" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">
             <div class="content h-100 text-center">
               <img src="image/landing-1/team-image-2.png" alt="image">
-              <p>“Simplemente los mejores proveedores, tienen una amplia variedad de productos.”</p>
+              <p class="text-dark">“Simplemente los mejores proveedores, tienen una amplia variedad de productos.”</p>
               <h5>Christina Olivera</h5>
               <small>Administrador de Empresas</small>
             </div>
@@ -366,7 +418,7 @@
           <div class="col-lg-4 col-md-6 col-sm-11 col-xs-12" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="1000">
             <div class="content h-100 text-center">
               <img src="image/landing-1/team-image-3.png" alt="image">
-              <p>“Muy buenos proveedores y la atención del equipo es excelente”</p>
+              <p class="text-dark">“Muy buenos proveedores y la atención del equipo es excelente”</p>
               <h5>Luis Garcia</h5>
               <small>Medico</small>
             </div>
@@ -381,8 +433,8 @@
         <div class="row justify-content-center">
           <div class="col-xxl-5 col-xl-6 col-lg-7 col-md-8" data-aos="fade-in" data-aos-delay="500" data-aos-duration="1000">
             <div class="section__heading section-heading-4 text-center">
-              <h2>Contacto</h2>
-              <p>Si deseas más información o no encontraste el producto que deseas, 
+              <h2 class="text-dark">Contacto</h2>
+              <p class="text-dark">Si deseas más información o no encontraste el producto que deseas, 
                 manda un mensaje y en breve nos pondremos en contacto contigo. Tenemos venta a escala.:</p>
             </div>
           </div>
@@ -390,29 +442,21 @@
         <div class="mt-5 row flex-lg-row align-items-center justify-content-center justify-content-lg-between">
             <div class="col-12 col-lg-5 d-flex">
                 <img width="25px" height="25px"class="mx-2 color-blue" src="img/location.png" alt="">
-                <p class="">
+                <p class="text-dark">
                   Blvd. Zertuche 147-3 A Fracc. Valle Dorado
                 </p>
             </div>
             <div class="col-12 col-lg-4 mx-auto d-flex">
-              <div class="">
-                <img width="25px" height="25px"class="mx-2 color-blue" src="img/email.png" alt="">
-              </div>
-              <div >                
-                <p class="">
+                <img width="25px" height="25px"class="mx-2 color-blue" src="img/email.png" alt="">             
+                <p class="text-dark">
                 info@lukesupplies.com.mx
                 </p>
-              </div>
             </div>
             <div class="col-12 col-lg-3 mx-auto  d-flex">
-              <div class="">
                 <img width="25px" height="25px"class="mx-2 color-blue" src="img/smartphone.png" alt="">
-              </div>
-              <div >  
-                <p class="">
+                <p class="text-dark">
                 +52 (646)176-6559
                 </p>
-              </div>
             </div>
             
         </div>
@@ -452,7 +496,7 @@
                   <p class="terms"><span class="bold">Estoy de acuerdo</span> al enviar sus datos, nos otorga permiso para almacenar y procesar sus datos de acuerdo con nuestra Política de Privacidad.</p>
                 </div>
                 <div class="col-12 col-lg-3 d-flex flex-row l1-get-start-btn2 ">
-                  <button style="width:auto;" class=" btn btn-style-02 mx-auto">Enviar</button>
+                  <button style="width:auto; border-radius: 4px;" class=" btn mx-auto">Enviar</button>
                 </div>
               </div>
             </form>
@@ -464,9 +508,9 @@
   </div>
     <!-- Footer Area -->
     <footer class="footer-area position-relative">
-      <div class="container d-flex flex-lg-row justify-content-lg-between justify-content-center">
+      <div class="container d-flex flex-lg-row justify-content-lg-between justify-content-center align-items-center">
         <div>
-          <!--logo-->
+          <img src="img/logo-1.png" alt="">
         </div>
         <div class="d-flex flex-column">
           <div class="d-flex flex-row justify-content-end align-items-end">
@@ -483,7 +527,9 @@
     <a href="https://api.whatsapp.com/send?phone=664176559" target="_blank">
       <img  class="whatsapp" src="img/icono-wtsp.png" alt="">
     </a>
-  
+
+
+
   <!-- Vendor Scripts -->
   <script src="js/vendor.min.js"></script>
   <!-- Plugin's Scripts -->
@@ -497,6 +543,23 @@
   <script src="./plugins/isotope/packery.pkgd.min.js"></script>
   <script src="./plugins/isotope/image.loaded.js"></script>
   <script src="./plugins/menu/menu.js"></script>
+  <script src="./js/swiper-bundle.min.js"></script>
+  <script>
+    function popuphandler(flag) {
+          if (flag) {
+              document.getElementById("popup").classList.remove("d-none");
+          } else {
+              document.getElementById("popup").classList.add("d-none");
+          }
+      }
+      const swiper = new Swiper('.swiper', {
+    speed: 400,
+    spaceBetween: 100,
+  });
+  document.querySelector(".swiper-button-next").addEventListener('click', ()=> swiper.slideNext())
+  document.querySelector(".swiper-button-prev").addEventListener('click', ()=> swiper.slidePrev())
+
+    </script>
   <!-- Activation Script -->
   <script src="js/custom.js"></script>
 </body>

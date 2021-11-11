@@ -1245,7 +1245,6 @@ li.sub-menu--item.nav-item-has-children i {
 .landing-1-menu .header-btn-l1 .btn {
   min-width: 129px;
   height: 45px;
-  box-shadow: 0 16px 36px rgba(241, 139, 98, 0.3);
   border-radius: 15px;
   background-color: #FF7139;
   color: #fff;
@@ -1317,7 +1316,7 @@ li.sub-menu--item.nav-item-has-children i {
   background: #0BC244;
   min-width: 210px;
   height: 50px;
-  border-radius: 20px;
+  border-radius: 4px;
   font-weight: 600;
   font-size: 17px;
   line-height: 30px;
@@ -2080,14 +2079,13 @@ li.sub-menu--item.nav-item-has-children i {
 .l1-create-acc-btn .btn {
   min-width: 268px;
   height: 69px;
-  border-radius: 20px;
-  background-color: #0BC244;
+  border-radius: 4px;
+  background-color: #59B031;
   color: #fff;
   font-size: 17px;
   font-weight: 400;
   font-style: normal;
   letter-spacing: normal;
-  box-shadow: 0 26px 46px rgba(103, 241, 98, 0.5);
   margin-top: 22px;
   font-size: 21px;
   line-height: 30px;
@@ -2159,9 +2157,8 @@ li.sub-menu--item.nav-item-has-children i {
 }
 
 .feature-l1-items .content img {
-  margin-bottom: 52px;
+  margin:2rem 0;
 }
-
 .feature-l1-items .content h5 {
   color: #213053;
   font-size: 24px;
@@ -2351,9 +2348,8 @@ li.sub-menu--item.nav-item-has-children i {
 .l1-get-start-btn .btn {
   width: 247px;
   height: 69px;
-  box-shadow: 0 26px 46px rgba(241, 139, 98, 0.5);
-  border-radius: 20px;
-  background-color: #FF7139;
+  border-radius: 4px;
+  background-color: #59B031;
   color: #fff;
   font-size: 17px;
   font-weight: 400;
@@ -4060,13 +4056,13 @@ li.sub-menu--item.nav-item-has-children i {
 }
 
 .lets-talk-btn {
-  background: #4CB0E4;
+  background: #59B031;
   min-width: 180px;
   height: 60px;
   font-weight: 600;
   font-size: 21px;
   line-height: 30px;
-  border-radius: 0;
+  border-radius: 4px;
   color: #fff;
 }
 
@@ -4208,9 +4204,11 @@ li.sub-menu--item.nav-item-has-children i {
 }
 
 .content-l3-1-image .counter-box-l3 {
-  background: #FF7139;
+  background: #5AB0E3;
   padding: 45px 30px 45px 30px;
-  box-shadow: 0px 54px 100px -10px rgba(255, 121, 77, 0.3);
+}
+.img-l3{
+  max-height: 80%;
 }
 
 @media (min-width: 576px) {
@@ -25603,7 +25601,7 @@ a {
   position: absolute;
   top: 0%;
   left: 0%;
-  border-radius: 20px;
+  border-radius: 4px;
   background: #213053;
   transition: all .5s;
   opacity: 0;
@@ -25631,7 +25629,7 @@ a {
   position: absolute;
   top: 0%;
   left: 0%;
-  border-radius: 10px;
+  border-radius: 4px;
   background: #213053;
   transition: all .5s;
   z-index: -1;
@@ -25659,7 +25657,7 @@ a {
   position: absolute;
   top: 0%;
   left: 0%;
-  border-radius: 20px;
+  border-radius: 4px;
   background: #213053;
   transition: all .5s;
   z-index: -1;
@@ -25687,7 +25685,7 @@ a {
   position: absolute;
   top: 0%;
   left: 0%;
-  border-radius: 3px;
+  border-radius: 4px;
   background: #213053;
   transition: all .5s;
   z-index: -1;
