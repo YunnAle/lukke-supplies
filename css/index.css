@@ -59,14 +59,7 @@
       margin: 0 .8rem;
   }
 
-  .whatsapp { /* Safari */
-    position: fixed;
-    bottom: 0;
-    right:0;
-    margin-right: 2rem;
-    margin-bottom: 2rem;
-    width:5rem;
-  }
+
 
   .border-blue {
     border: 0.2rem solid #EBF5FF;
@@ -106,15 +99,25 @@
       border-radius: 4px;
       border: none;
   }
+  .whatsapp { 
+    position: fixed;
+    bottom: 0;
+    right:0;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    width:5rem;
+    z-index: 10;
+  }
 
-  @media (max-width: 992px) {
-    .whatsapp { /* Safari */
+  @media (max-width: 992px) { /*pon tus medidas de responsividad estas son las que yo ocupaba pero no son las estandar*/
+    .whatsapp { 
         position: fixed;
         bottom: 0;
         right:0;
         margin-right: .5rem;
         margin-bottom: .5rem;
         width:3rem;
+        z-index: 10;
       }
 
   }
@@ -123,3 +126,26 @@
         margin-right: 1rem!important;
     }
   }
+
+  .bg-slide-1 {
+      background-image: url('../img/hero-bg.png');
+      background-size:cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100%;
+      width: 100%;
+  }
+
+  .bg-slide-2 {
+    background-image: url('../img/hero-bg.png');
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg-slide-3 {
+    background-image: url('../img/hero-bg.png');
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
