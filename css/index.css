@@ -125,6 +125,10 @@
     .checkbox {
         margin-right: 1rem!important;
     }
+
+    .responsive-swiper-btn {
+        display: none!important;
+    }
   }
 
   .bg-slide-1 {
@@ -148,4 +152,8 @@
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.responsive-swiper-btn {
+    display: block;
 }
