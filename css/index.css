@@ -129,11 +129,30 @@
     .responsive-swiper-btn {
         display: none!important;
     }
+    .bg-slide-1 {
+        background-position: -10em!important;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+    }
+  
+    .bg-slide-2 {
+      background-position: -10em!important;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
   }
+  
+  .bg-slide-3 {
+      background-position: -10em!important;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+  }
+}
 
   .bg-slide-1 {
       background-image: url('../img/slide1-1.jpg');
-      background-size:initial;
       background-position: center;
       background-repeat: no-repeat;
       height: 100%;
@@ -147,6 +166,7 @@
     width: 100%;
     height: 100%;
 }
+
 
 .bg-slide-3 {
     background-image: url('../img/slide3.jpg');
