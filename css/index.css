@@ -152,7 +152,8 @@
 }
 
   .bg-slide-1 {
-      background-image: url('../img/slide1-1.jpg');
+      font-size:60%!important;
+      background-image: url('../img/slide1.png');
       background-position: center;
       background-repeat: no-repeat;
       height: 100%;
@@ -160,7 +161,7 @@
   }
 
   .bg-slide-2 {
-    background-image: url('../img/slide2.jpg');
+    background-image: url('../img/slide2.png');
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
@@ -169,7 +170,7 @@
 
 
 .bg-slide-3 {
-    background-image: url('../img/slide3.jpg');
+    background-image: url('../img/slide3.png');
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
