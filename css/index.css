@@ -149,11 +149,15 @@
       width: 100%;
       height: 100%;
   }
+  .banner-text {
+    color: white!important;
+    font-size: 2.3rem!important;
+    line-height: 50px!important;
+}
 }
 
   .bg-slide-1 {
-      font-size:60%!important;
-      background-image: url('../img/slide1.png');
+      background-image: url('../img/slide1-2.jpg');
       background-position: center;
       background-repeat: no-repeat;
       height: 100%;
@@ -177,6 +181,16 @@
     height: 100%;
 }
 
+
 .responsive-swiper-btn {
     display: block;
+}
+
+.lukke-banner {
+    width: 4rem;
+    margin-bottom: .8rem;
+}
+
+.lukke-banner-p {
+    font-size: 1.4rem;
 }

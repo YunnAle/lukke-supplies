@@ -1988,6 +1988,7 @@ li.sub-menu--item.nav-item-has-children i {
   }
 }
 
+
 @media (min-width: 768px) {
   .hero-area-l1 {
     padding-top: 180px;
@@ -2002,9 +2003,6 @@ li.sub-menu--item.nav-item-has-children i {
   }
 }
 
-.hero-area-l1 .content {
-  padding-top: 45px;
-}
 
 @media (min-width: 992px) {
   .hero-area-l1 .content {
@@ -2045,7 +2043,7 @@ li.sub-menu--item.nav-item-has-children i {
 
 @media (min-width: 1200px) {
   .hero-area-l1 .content h2 {
-    font-size: 60px;
+    font-size: 48px;
     line-height: 66px;
   }
 }
@@ -2080,7 +2078,7 @@ li.sub-menu--item.nav-item-has-children i {
   min-width: 268px;
   height: 69px;
   border-radius: 4px;
-  background-color: #59B031;
+  background-color: #054F98;
   color: #fff;
   font-size: 17px;
   font-weight: 400;
