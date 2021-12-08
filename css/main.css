@@ -2025,6 +2025,17 @@ li.sub-menu--item.nav-item-has-children i {
     font-size: 30px;
     line-height: 36px;
   }
+
+  .l1-create-acc-btn .btn {
+    margin-top: 0!important;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .l1-create-acc-btn .btn {
+    margin-top: 0!important;
+  }
 }
 
 @media (min-width: 768px) {

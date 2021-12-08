@@ -121,7 +121,16 @@
       }
 
   }
+
+  @media (max-width:400px) {
+
+    
+  }
   @media (max-width: 600px) {
+    .p-malvado {
+        display: none!important;
+    }
+
     .checkbox {
         margin-right: 1rem!important;
     }
@@ -154,6 +163,7 @@
     font-size: 2.3rem!important;
     line-height: 50px!important;
 }
+
 }
 
   .bg-slide-1 {
@@ -193,4 +203,8 @@
 
 .lukke-banner-p {
     font-size: 1.4rem;
+}
+
+.p-malvado {
+    display:block;
 }
