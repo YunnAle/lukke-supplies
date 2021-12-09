@@ -2022,8 +2022,8 @@ li.sub-menu--item.nav-item-has-children i {
 
 @media (min-width: 576px) {
   .hero-area-l1 .content h2 {
-    font-size: 30px;
-    line-height: 36px;
+    font-size: 50px;
+    line-height: 50px;
   }
 
   .l1-create-acc-btn .btn {
@@ -2040,8 +2040,8 @@ li.sub-menu--item.nav-item-has-children i {
 
 @media (min-width: 768px) {
   .hero-area-l1 .content h2 {
-    font-size: 28px;
-    line-height: 24px;
+    font-size: 50px;
+    line-height: 55px;
   }
 }
 
@@ -2054,7 +2054,7 @@ li.sub-menu--item.nav-item-has-children i {
 
 @media (min-width: 1200px) {
   .hero-area-l1 .content h2 {
-    font-size: 48px;
+    font-size: 50px;
     line-height: 66px;
   }
 }

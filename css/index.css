@@ -121,14 +121,24 @@
       }
 
   }
+  .p-hero {
+    padding: 0 0;
+}
 
-  @media (max-width:400px) {
-
+  @media (min-width:550px) {
+    .p-hero {
+        padding: 4rem 0;
+    }
     
   }
-  @media (max-width: 600px) {
+  @media (min-width: 450px) {
     .p-malvado {
-        display: none!important;
+        font: size 25px!important;
+    }
+   }
+  @media (max-width: 450px) {
+    .p-malvado {
+        font: size 25px!important;
     }
 
     .checkbox {
@@ -159,7 +169,6 @@
       height: 100%;
   }
   .banner-text {
-    color: white!important;
     font-size: 2.3rem!important;
     line-height: 50px!important;
 }
@@ -207,4 +216,25 @@
 
 .p-malvado {
     display:block;
+    color: white!important;
+}
+@media (min-width: 601px) and (max-width: 994px){
+    .container{
+        margin-left:20px!important;
+    }  
+}
+@media (min-width: 579px) and (max-width: 964px) {
+    .text-w{
+        color:white;
+    }  
+}
+
+@media (min-width: 454px) and (max-width: 1055px){
+    .p-malvado {
+        color: white!important;
+        max-width: 420px;
+    }
+    .banner-text {
+        color: white!important;
+    }
 }
